@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda en Bootstrap</title>
+  <meta name="author" content="Carlos Zepeda">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: monospace;
+    }
+
+    h1 {
+      padding: 1rem 0 0 1rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    h1::first-letter {
+      color: rgb(249, 160, 36);
+      font-weight: bold;
+      font-size: 3rem;
+    }
+
+    .Boton {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--barra de navegación-->
+  <header">
+    <nav class="navbar navbar-expand-lg text-bg-dark p-3 text-light" style="background-color: aqua">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="./index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+            class="bi bi-house-door-fill" viewBox="0 0 16 16">
+            <path
+              d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./productos.html">Productos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+
+    <main>
+        <!-- alert -->
+      <div class="alert alert-info" role="alert">
+        ¡Aprovecha nuestras promociones en la sección de productos!
+      </div>
+
+      <div class="container">
+        <h1>Bienvenido al outlet para caballeros que no sabías que necesitabas hasta este momento</h1>
+      </div>
+      <br>
+          <!-- carrusel -->
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://www.gannett-cdn.com/-mm-/72d7a379e79c1e2d3c2cb6f4c6c56235a664d809/c=0-373-4032-2651/local/-/media/2017/08/18/WIGroup/Sheboygan/636386741045534200-IMG-7363.JPG?width=3200&height=1680&fit=crop"
+              width="auto" height="600rem" class="d-block w-100" alt="tienda 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>20% OFF</h5>
+              <p>La ropa del montón no tiene estas ofertas.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://i2.wp.com/www.denverdweller.com/wp-content/uploads/2018/11/Moda-Man-Larimer-Sq.jpg?resize=1080,720&ssl=1"
+              class="d-block w-100" width="auto" height="600rem" alt="tienda 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Visita la nueva sucursal Iztalapa Klan</h5>
+              <p>Porque el barrio también viste elegante.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.shoppyland.ch/uploads/images/shoppyland_pkzmen_shopheader_mobile/shoppyland_pkzmen_shopheader_mobile_image_slider_mobile_store.jpg"
+              class="d-block w-100" width="auto" height="600rem" alt="tienda 3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Nueva colección de verano</h5>
+              <p>Prepárate para los calorones que se vienen.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+      <br>
+      <div class="Boton">
+        <button type="button" class="btn btn-info"><a href="productos.html" style="text-decoration:none; color: white;">Ver productos</a></button>
+      </div>
+    </main>
+
+
+    <!--Pie de página-->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="./productos.html" class="nav-link px-2 text-body-secondary">Productos</a></li>
+          <li class="nav-item" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#"class="nav-link px-2 text-body-secondary">Login</a></li>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title fs-5" id="exampleModalLabel">Sección en construcción</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Próximamente tendremos esta parte habilitada
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bye</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 By Nacho</p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
